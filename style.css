@@ -92,7 +92,7 @@ nav {
 
 .future {
   padding: 0 1.6rem;
-  margin-top: 7rem;
+  margin: 7rem 0 25rem 0;
 }
 
 .future__title {
@@ -112,5 +112,36 @@ nav {
 .future__info > p {
   font-size: 1.5rem;
   padding: 0 2.5rem;
+  line-height: 1.7;
+}
+
+.phones {
+  width: 100%;
+  min-width: 320px;
+  position: relative;
+  border-radius: 0 7.5rem 0 7.5rem;
+  background-image: url('./images/bg-pattern-circles.svg'),
+    linear-gradient(hsl(237, 17%, 21%), hsl(237, 17%, 21%));
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: 50% 200%;
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.phones img {
+  width: 100%;
+  position: absolute;
+  top: -17rem;
+  left: 0;
+}
+
+.phones__info > h2 {
+  font-size: 3.5rem;
+  padding: 17rem 4rem 1.5rem 4rem;
+}
+.phones__info > p {
+  font-size: 1.5rem;
+  padding: 0 4.5rem;
   line-height: 1.7;
 }
