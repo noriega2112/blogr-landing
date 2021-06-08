@@ -122,7 +122,7 @@ nav {
   position: relative;
   border-radius: 0 7.5rem 0 7.5rem;
   background-image: url('./images/bg-pattern-circles.svg'),
-    linear-gradient(hsl(237, 17%, 21%), hsl(237, 17%, 21%));
+    linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
   background-repeat: no-repeat;
   background-size: 180%;
   background-position: 50% 200%;
@@ -168,4 +168,27 @@ nav {
   line-height: 1.7;
   font-weight: 300;
   padding: 0 4rem;
+}
+
+footer {
+  background-color: hsl(240, 10%, 16%);
+  color: #fff;
+  border-radius: 0 7.5rem 0 0;
+  padding: 7rem 0;
+}
+
+footer h2 {
+  font-size: 3.5rem;
+  padding: 0 0 4rem 0;
+}
+
+footer > div > h3 {
+  font-size: 1.7rem;
+  padding: 3rem 0 2rem 0;
+}
+
+footer > div > p {
+  font-size: 1.5rem;
+  color: hsl(240, 2%, 79%);
+  padding: 0.5rem 0;
 }
