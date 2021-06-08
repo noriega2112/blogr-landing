@@ -18,6 +18,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header>
@@ -27,11 +31,14 @@
         <div class="navigation">
           <img src="./images/icon-hamburger.svg" alt="" />
         </div>
-        <nav>
+        <nav class="animate__animated animate__fadeIn">
           <ul>
             <li>
-              Product
-              <ul>
+              <div class="menu-item" id="product">
+                <h2>Product</h2>
+                <img src="./images/icon-arrow-dark.svg" alt="Arrow icon" />
+              </div>
+              <ul class="inner-menu">
                 <li>Overview</li>
                 <li>Pricing</li>
                 <li>Marketplace</li>
@@ -40,8 +47,11 @@
               </ul>
             </li>
             <li>
-              Company
-              <ul>
+              <div class="menu-item" id="company">
+                <h2>Company</h2>
+                <img src="./images/icon-arrow-dark.svg" alt="Arrow icon" />
+              </div>
+              <ul class="inner-menu">
                 <li>About</li>
                 <li>Team</li>
                 <li>Blog</li>
@@ -49,17 +59,21 @@
               </ul>
             </li>
             <li>
-              Connect
-              <ul>
+              <div class="menu-item" id="connect">
+                <h2>Connect</h2>
+                <img src="./images/icon-arrow-dark.svg" alt="Arrow icon" />
+              </div>
+              <ul class="inner-menu">
                 <li>Contact</li>
                 <li>Newsletter</li>
                 <li>LinkedIn</li>
               </ul>
             </li>
           </ul>
-          <ul>
-            <li>Login</li>
-            <li>Sign Up</li>
+          <div class="line"></div>
+          <ul class="userBtn">
+            <button class="loginBtn">Login</button>
+            <button class="sigupBtn">Sign Up</button>
           </ul>
         </nav>
       </div>
@@ -158,5 +172,6 @@
         <p>LinkedIn</p>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
