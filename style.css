@@ -9,6 +9,7 @@ html {
   font-family: 'Overpass', sans-serif;
   /* font-family: 'Ubuntu', sans-serif; */
   scroll-behavior: smooth;
+  text-align: center;
 }
 
 ul {
@@ -19,7 +20,6 @@ header {
   height: auto;
   width: 100%;
   min-width: 320px;
-  /* linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%)), */
   background-image: url('./images/bg-pattern-intro.svg'),
     linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-repeat: no-repeat;
@@ -60,17 +60,18 @@ nav {
 }
 
 .cta {
-  margin: 4.5rem 0 6rem 0;
+  margin: 4.5rem 0 8rem 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 4.2rem;
+  padding: 0 2rem;
 }
 
 .cta button {
   border-radius: 7rem;
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.3rem;
   border: none;
   font-weight: 600;
+  font-size: 1.7rem;
 }
 
 .cta button:nth-child(1) {
@@ -82,4 +83,34 @@ nav {
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
+}
+
+.main {
+  width: 100%;
+  min-width: 320px;
+}
+
+.future {
+  padding: 0 1.6rem;
+  margin-top: 7rem;
+}
+
+.future__title {
+  margin-bottom: 3rem;
+  font-size: 2.3rem;
+}
+
+.future img {
+  width: 100%;
+}
+
+.future__info > h2 {
+  font-size: 2.5rem;
+  padding: 2rem 4rem 1.5rem 4rem;
+}
+
+.future__info > p {
+  font-size: 1.5rem;
+  padding: 0 2.5rem;
+  line-height: 1.7;
 }
