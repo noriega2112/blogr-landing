@@ -159,7 +159,7 @@ nav {
   margin: 4.5rem 0 8rem 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .cta button,
@@ -299,4 +299,113 @@ footer > div > p {
   font-size: 1.5rem;
   color: hsl(240, 2%, 79%);
   padding: 0.5rem 0;
+}
+
+@media (min-width: 768px) {
+  nav {
+    position: inherit;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    box-shadow: none;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: row;
+    padding: 0 10rem;
+    align-items: center;
+  }
+
+  #logo {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .main-menu {
+    display: flex;
+    position: relative;
+  }
+
+  .menu-item > h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    transition: all 0.3s ease-in;
+  }
+
+  .menu-item > h2:hover {
+    text-decoration: underline;
+  }
+
+  .inner-menu {
+    position: absolute;
+  }
+
+  .dropdown:hover .inner-menu {
+    display: flex;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .userBtn {
+    flex-direction: row;
+  }
+
+  .loginBtn {
+    color: #fff;
+    padding-right: 3rem;
+  }
+
+  .sigupBtn {
+    padding: 1.5rem 4rem;
+    background: #fff;
+    color: hsl(356, 100%, 66%);
+    transition: all 0.1s ease-in;
+  }
+  .sigupBtn:hover {
+    background: hsl(355, 100%, 74%);
+    color: #fff;
+  }
+
+  .hero h1 {
+    font-size: 5.5rem;
+  }
+  .hero p {
+    font-size: 2rem;
+  }
+  .cta {
+    /* margin: 4.5rem 0 8rem 0; */
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+  .cta button {
+    margin-right: 1.5rem;
+  }
+
+  .inner-menu {
+    /* display: flex; */
+    position: absolute;
+    padding: 2rem;
+    margin: 0;
+    width: 150px;
+    text-align: left;
+  }
+
+  .inner-menu > li {
+    font-weight: 300;
+  }
+
+  .inner-menu > li:hover {
+    font-weight: 600;
+    cursor: pointer;
+  }
 }
